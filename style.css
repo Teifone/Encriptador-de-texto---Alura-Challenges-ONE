@@ -1,0 +1,196 @@
+:root{
+    --color-fondo:#e5eaf6;
+    --color-area-texto:#dae7f6;
+    --color-cuadro-divisores:#BED1FC;
+    --color-principal:#5b5eae;
+    --color-intermedio:#7b7ed8;
+    --texto-h2:'Source Sans Pro', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    display: block;
+}
+
+header{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-principal);
+    height: 20vh;
+}
+
+.logoAlura img{
+    height: 5rem;
+    width: auto;
+}
+
+.foto img{
+    height: 9rem;
+    width: auto;
+}
+
+.titulo{
+    font-size: 3rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem 0;
+}
+
+.ingresoTexto, .salidaTexto{
+    border: .5rem solid var(--color-intermedio);
+    border-radius: 2rem;
+    background-color:var(--color-cuadro-divisores);
+    height: 40rem;
+    width: 40rem;
+    padding: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.ingresoTexto h2, .salidaTexto h2{
+    font-size: 2rem;
+    font-family: var(--texto-h2);
+    display:flex;
+}
+
+.salidaTexto{
+    position: relative;
+}
+
+.salidaTexto img{
+    width: 16rem;
+    height: 15rem;
+    position: absolute;
+    top: 12rem;
+    left: 11rem;
+}
+
+main textarea{
+    background-color: var(--color-area-texto);
+    resize: none;
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--color-intermedio);
+}
+
+.areaInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.areaInfo p{
+    padding: 0 0.6rem;
+    font-size: 1.2rem;
+}
+
+.areaBotones{
+    margin: 2rem 0;
+}
+
+.botonTodo{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #495057;
+    background: #495057;
+    margin: 0.4rem 1rem;
+}
+
+.botonTodo:hover{
+    background: #fff;
+    color: #495057
+}
+
+footer{
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.linea{
+    display: flex;
+    align-items: center;
+    width: 42.5%;
+}
+
+.linea div{
+    width: 100%;
+    height: 0.1rem;
+    background-color: white;
+}
+
+.imagenesLogo{
+    width: 15%;
+}
+
+.descripcion{
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 1rem auto;
+    border: 0.01rem solid white;
+    padding: 0.5rem 0.5rem;
+}
+
+.descripcion h3, .descripcion p{
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.descripcion h3{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.descripcion p{
+    text-align: justify;
+}
+
+.recursosLegales{
+    display: inline-block;
+}
+
+.recursosLegales a{
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.recursosLegales p{
+    display: inline-block;
+}

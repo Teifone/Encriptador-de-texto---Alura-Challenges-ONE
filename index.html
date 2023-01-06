@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador-Desencriptador</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');</style>
+</head>
+<body>
+    <header>
+        <section class="logoAlura">
+            <img src="./imagenes/alura.png" alt="logoAlura">
+        </section>
+        <section class="titulo">
+            <h1>ENCRIPTADOR TEXTO - JUAN P. REYES</h1>
+        </section>
+        <section class="foto">
+            <img src="./imagenes/fotoPerfil.png" alt="fotoJuan">
+        </section>
+    </header>
+    <main>
+        <section class="ingresoTexto">
+            <h2>Ingrese el texto aqui:</h2>
+            <textarea id="entrada_Texto" placeholder="Digite el texto que desea encriptar."></textarea>
+            <div class="areaInfo">
+                <img src="./imagenes/Vector.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="areaBotones">
+                <button class="botonTodo" id="botonEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="botonTodo" id="botonDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salidaTexto">
+            <h2>Su texto es:</h2>
+            <img id="myDIV" src="./imagenes/mensajeNoEncontrado.png" alt="">
+            <textarea id="salida_Texto" placeholder="Podras ver tu resultado por aqui.."></textarea>
+            <div class="areaBotonCopiar">
+                <button class="botonTodo" id="boton_Copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="logos">
+            <div class="linea">
+                <div></div>
+            </div>
+            <div class="imagenesLogo">
+                <img src="./imagenes/linkedin.png" alt="logoLinkdIn">
+                <img src="./imagenes/instagram.png" alt="logoInstagram">
+                <img src="./imagenes/facebook.png" alt="logoFacebook">
+            </div>
+            <div class="linea">
+                <div></div>
+            </div>
+        </section>
+        <section class="informacion">
+            <h2>Juan Pablo Reyes Negrette</h2>
+            <div class="descripcion">
+                <h3>¿Qué es el encriptado?</h3>
+                <p>La encriptación es un método de codificación de datos (mensajes o archivos) de modo que solo las partes autorizadas puedan leer la información o acceder a ella. La encriptación utiliza algoritmos complejos para codificar la información que se envía.</p>
+            </div>
+            <div class="recursosLegales">
+                <a href="#">Informacion legal</a>
+                <p>|</p>
+                <a href="#">Politica de privacidad</a>
+            </div>
+        </section>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
